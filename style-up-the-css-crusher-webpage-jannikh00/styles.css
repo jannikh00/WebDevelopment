@@ -1,0 +1,159 @@
+/********** General Style Settings **********/
+
+body {
+    height: 125vh;
+    margin-top: 80px;
+    padding: 30px;
+    background-size: cover;
+    /*background-color: rgb(255, 228, 184);*/
+    font-family: Arial, sans-serif;
+}
+
+/* Media query for small devices */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .title-class {
+        font-size: 20px;
+    }
+}
+
+/* Media query for medium devices */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Media query for larger devices */
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+header {
+    /*background-color: rgb(255, 0, 0);*/
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+}
+
+header li a {
+    /*color: rgb(255, 255, 255);*/
+    text-decoration: none;
+}
+
+h1 {
+    /*color: navy;*/
+    font-size: 40px;
+}
+
+h2 {
+    /*color: cornflowerblue;*/
+    font-size: 28px;
+}
+
+h3 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+/********** Inter-Page **********/
+
+.body-class {
+    background-color: rgb(255, 228, 184);
+}
+
+.header-class {
+    background-color: cornflowerblue;
+    color: red;
+}
+
+.nav-class {
+    background-color: maroon;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav a {
+    font-weight: bold;
+}
+
+.title-class {
+    color: maroon;
+}
+
+.section-title-class {
+    color: crimson;
+}
+
+.text-class {
+    color: #515151;
+}
+
+.image-class {
+    border: 5px solid;
+    border-color: deepskyblue;
+    box-shadow: 10px 10px 5px #515151;
+    max-width: 100%;
+    height: auto;
+}
+
+.form-class {
+    display: block;
+    margin-top: 0em;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    background-color: rgba(100, 148, 237, 0.359);
+    border: 3px solid;
+    border-color: cornflowerblue;
+    box-shadow: 10px 10px 5px #515151;
+}
+
+.button-class {
+    display: block;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid;
+    border-color: cornflowerblue;
+}
+
+.footer-class {
+    background-color: cornflowerblue;
+    color: black;
+    padding-left: 10px;
+}
+
+/********** Home **********/
+
+
+
+/********** About **********/
+
+
+
+/********** Gallery **********/
+
+
+
+/********** Contact **********/

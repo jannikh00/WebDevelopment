@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style type=text/css>
+        body {
+            height: 125vh;
+            margin-top: 80px;
+            padding: 30px;
+            background-size: cover;
+            background-color: papayawhip;
+            font-family: sans-serif;
+        }
+
+        header {
+            background-color: rgb(255, 0, 0);
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 5px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0 25px 0 black;
+        }
+
+        header * {
+            display: inline;
+        }
+
+        header li {
+            margin: 20px;
+        }
+
+        header li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .resume body {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: navy;
+            font-size: 40px;
+        }
+
+        h2 {
+            color: navy;
+            font-size: 28px;
+        }
+
+        h3 {
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+        }
+
+        .work-experience,
+        .education {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="aboutme.html">About Me</a>
+                </li>
+                <li>
+                    <a href="resume.html">Resume</a>
+                </li>
+                <li>
+                    <a href="contactme.html">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="resume header">
+        <h1>Jannik Hofmann</h1>
+        <p>Email: jannikhofmann@example.com | Phone: 123-456-7890</p>
+    </section>
+
+    <section class="resume body">
+        <h2>Professional Summary</h2>
+        <p>Experienced and skilled professional with a background in Computer Science. Proficient in HTML, CSS,
+            JavaScript, Java, Python and SQL.</p>
+    </section>
+
+    <section class="resume body">
+        <h2>Work Experience</h2>
+        <div class="work-experience">
+            <h3>Intern Quality - Security and Compliance Dept. - p36 GmbH</h3>
+            <p>03/2023 - 04/2023</p>
+            <ul>
+                <li>Evaluation of various antivirus software vendors and presentation of the results to themanagement
+                </li>
+                <li>Further development of Python code for backup system</li>
+                <li>Use of the applications GitHub, Jira as well as Confluence</li>
+            </ul>
+
+            <h3>Apprentice - Klinikum Bad Hersfeld GmbH</h3>
+            <p>08/2019 - 01/2022</p>
+            <ul>
+                <li>Maintenance and Expansion of the Company Website using HTML, CSS, JavaScript and GitHub</li>
+                <li>Troubleshooting and Resolving Bugs in Existing Web Applications</li>
+                <li>Implemented performance optimizations that reduced page load times by 30%, resulting in improved
+                    user engagement and a 15% decrease in bounce rate</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="resume body">
+        <h2>Education</h2>
+        <div class="education">
+            <h3>Bachelor of Science Computer Science - Lourdes University</h3>
+            <p>08/2023 - Present</p>
+            <h3>Bachelor of Science Management Information Systems - University of Bamberg</h3>
+            <p>04/2022 - 05/2023 (Transfer)</p>
+            <h3>Apprenticeship: IT Specialist for Application Development - Modellschule Obersberg</h3>
+            <p>08/2019 - 01/2022</p>
+            <h3>A levels - Modellschule Obersberg</h3>
+            <p>09/2015 - 05/2018</p>
+        </div>
+    </section>
+</body>
+
+</html>

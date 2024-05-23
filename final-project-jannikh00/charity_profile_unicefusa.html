@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charities - UNICEF USA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+
+<body>
+    <header>
+        <nav class="header_left">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="charities.html">Charities</a></li>
+            </ul>
+        </nav>
+        <div class="header_right">
+            <a href="volunteer_now.html" class="volunteer_button">Volunteer Now</a>
+        </div>
+    </header>
+    <main>
+        <article>
+            <img src="./Pictures/Charity-Profile-Top-unicefusa.jpeg" alt="UNICEF USA Logo" class="image_on_top"
+                width="100%" height="400px">
+            <h1>UNICEF USA</h1>
+            <ul class="charity_profile_list">
+                <li>Founded: 1947</li>
+                <li>Location: New York, NY</li>
+                <li>Category: Children</li>
+                <li>Website-Link: <a href="https://www.unicefusa.org" target="_blank">UNICEF USA</a></li>
+            </ul>
+            <ul>Description:</ul>
+            <p class="charity_profile_description">
+                UNICEF USA shares a unified vision with UNICEF: a world where every child's rights are upheld, ensuring
+                their
+                well-being
+                and enabling them to thrive. Operating in over 190 countries and territories, UNICEF focuses on
+                safeguarding and
+                enhancing
+                the lives of children globally, with a particular emphasis on those facing the greatest vulnerabilities.
+                <br><br>
+                UNICEF USA actively supports UNICEF's global mission by mobilizing the American public to champion the
+                cause of
+                the world's
+                most marginalized children. As one of 33 National Committees dedicated to advocating for children
+                worldwide,
+                UNICEF USA
+                plays a vital role in driving positive change.
+                <br><br>
+                Through initiatives like the Impact Fund for Children, UNICEF USA provides avenues for socially
+                conscious
+                investors to
+                contribute to the survival and development of children. Additionally, its Advocacy team, based in
+                Washington,
+                D.C., tirelessly
+                advocates for policies and budgets that prioritize children's well-being, urging decision-makers across
+                sectors
+                to take action.
+            </p>
+            <button type="button" class="charity_profile_button">Volunteer Now</button>
+        </article>
+    </main>
+    <section>
+        <h3 class="charity_profile_h3">Location and Events</h3>
+        <p>To see the location of the Headquarters and Event options (if available), check out the map below!</p>
+        <div class="charity_profile_map" id="map_unicefusa"></div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Jannik Hofmann. All rights reserved.</p>
+    </footer>
+    <script src="charity_profile.js"></script>
+    <script>
+        function initMap_unicefusa() {
+
+            // setting coordinates for headquarter and events
+            var headquarters = { lat: 40.70618226814547, lng: -74.00636514586887 };
+            // var eventLocation1 = { lat: , lng:  };
+
+            // setting map options
+            var mapOptions = {
+                center: headquarters,
+                zoom: 10
+            };
+
+            // creating map
+            var map = new google.maps.Map(document.getElementById('map_unicefusa'), mapOptions);
+
+            // create marker for headquarters
+            var markerHQ = new google.maps.Marker({
+                position: headquarters,
+                map: map,
+                title: 'Headquarters'
+            });
+
+            // add info window to headquarter marker
+            var infoWindowHQ = new google.maps.InfoWindow({
+                content: '<h3>Headquarters</h3>'
+            });
+
+            // open info window on marker click
+            markerHQ.addListener('click', function () {
+                infoWindowHQ.open(map, markerHQ);
+            });
+
+            // // create marker for event 1
+            // var markerEvent1 = new google.maps.Marker({
+            //     position: eventLocation1,
+            //     map: map,
+            //     title: 'Event Location',
+            //     icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+            // });
+
+            // // add info window to event 1 marker
+            // var infoWindowEvent1 = new google.maps.InfoWindow({
+            //     content: '<h3></h3><p> <br>  <br> <a href="" target="_blank">More Information</a></p>'
+            // });
+
+            // // open info window on marker click
+            // markerEvent1.addListener('click', function () {
+            //     infoWindowEvent1.open(map, markerEvent1);
+            // });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2uBf8nHUqSbudz6w2dBVzNbbq5BD1c78&callback=initMap_unicefusa">
+        </script>
+</body>
+
+</html>

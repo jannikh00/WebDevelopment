@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style type=text/css>
+        body {
+            height: 125vh;
+            margin-top: 80px;
+            padding: 30px;
+            background-size: cover;
+            background-color: papayawhip;
+            font-family: sans-serif;
+        }
+
+        header {
+            background-color: rgb(255, 0, 0);
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 5px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0 25px 0 black;
+        }
+
+        header * {
+            display: inline;
+        }
+
+        header li {
+            margin: 20px;
+        }
+
+        header li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        form {
+            width: 350px;
+        }
+
+        input {
+            width: 90%;
+            padding: 5px;
+            margin-bottom: 10px;
+            vertical-align: middle;
+        }
+
+        textarea {
+            width: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="aboutme.html">About Me</a>
+                </li>
+                <li>
+                    <a href="resume.html">Resume</a>
+                </li>
+                <li>
+                    <a href="contactme.html">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Contact</h1>
+    <p>If you're interested in learning more about me you <br>
+        can reach out to me through this "Contact" page!</p>
+    <br>
+    <form>
+        <fieldset>
+            <legend>Information About You</legend>
+            <p>
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name">
+            </p>
+            <p>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+            </p>
+            <p>
+                <label for="subject">Subject: </label>
+                <input type="text" name="subject" id="subject">
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Send Me A Message!</legend>
+            <label for="message">Message: </label>
+            <br>
+            <textarea name="message" id="message" cols="40" rows="10" placeholder="Type your message here."></textarea>
+        </fieldset>
+        <br>
+        </fieldset>
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>

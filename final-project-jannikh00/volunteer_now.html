@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Now</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+
+<body>
+    <header>
+        <nav class="header_left">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="charities.html">Charities</a></li>
+            </ul>
+        </nav>
+        <div class="header_right">
+            <a href="volunteer_now.html" class="volunteer_button">Volunteer Now</a>
+        </div>
+    </header>
+    <main>
+        <h1>Volunteer Now</h1>
+        <p>
+            If you're interested in volunteering with one of these charities you can use
+            this page to reach out to the charities! We'll forward your request and the
+            organization will answer you shortly!
+        </p>
+        <br>
+        <form>
+            <fieldset>
+                <legend>About You</legend>
+                <p>
+                    <label class="custom-label" for="firstname">First Name: </label>
+                    <input class="custom-input" type="text" name="firstname" id="firstname">
+                </p>
+                <p>
+                    <label class="custom-label" for="lastname">Last Name: </label>
+                    <input class="custom-input" type="text" name="lastname" id="lastname">
+                </p>
+                <p>
+                    <label class="custom-label" for="email">Email: </label>
+                    <input class="custom-input" type="email" name="email" id="email">
+                </p>
+                <p>
+                    <label class="custom-label" for="birthday">Birthday: </label>
+                    <input class="custom-input" type="date" name="birthday" id="birthday">
+                </p>
+                <p>
+                    <label class="custom-label" for="charity">Charity: </label>
+                    <select name="cars" id="cars" class="custom-list">
+                        <option value="select">-- Select Option --</option>
+                        <option value="518elevated">518 ElevatED</option>
+                        <option value="mapinternational">MAP International</option>
+                        <option value="unicefusa">Unicef USA</option>
+                    </select>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label class="custom-label" for="message">Message: </label>
+                <br>
+                <textarea class="custom-input" name="message" id="message" cols="60" rows="10"
+                    placeholder="Anything else you want us or your desired charity to know!"></textarea>
+            </fieldset>
+            <br>
+            </fieldset>
+            <p>
+                <button type="submit" class="submit_button">Submit</button>
+            </p>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Jannik Hofmann. All rights reserved.</p>
+    </footer>
+    <script src="volunteer_now.js"></script>
+</body>
+
+</html>

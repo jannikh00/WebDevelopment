@@ -1,0 +1,100 @@
+/********** General Style Settings **********/
+
+body {
+    height: 125vh;
+    margin-top: 80px;
+    padding: 30px;
+    background-size: cover;
+    background-color: rgb(255, 228, 184);
+    font-family: sans-serif;
+}
+
+header {
+    background-color: rgb(255, 0, 0);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: navy;
+    font-size: 40px;
+}
+
+h2 {
+    color: cornflowerblue;
+    font-size: 28px;
+}
+
+h3 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+/********** Home **********/
+
+#home h1 {
+    color: brown;
+}
+
+#home p {
+    color: lightslategrey;
+}
+
+/********** About Me **********/
+
+.aboutMeHeader {
+    color: yellowgreen;
+}
+
+.briefIntroduction {
+    color: lightcoral;
+}
+
+.favoriteHobby {
+    color: indigo;
+}
+
+/********** Resume **********/
+
+.resume body {
+    margin-bottom: 20px;
+}
+
+.work-experience,
+.education {
+    margin-left: 20px;
+}
+
+/********** Contact Me **********/
+
+.custom-label {
+    color: crimson;
+}
+
+.custom-input {
+    border: 2px solid blue;
+    background-color: #e0e5ff;
+}

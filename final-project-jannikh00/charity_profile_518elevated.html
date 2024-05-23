@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charities - 518 ElevatED</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+
+<body>
+    <header>
+        <nav class="header_left">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="charities.html">Charities</a></li>
+            </ul>
+        </nav>
+        <div class="header_right">
+            <a href="volunteer_now.html" class="volunteer_button">Volunteer Now</a>
+        </div>
+    </header>
+    <main>
+        <article>
+            <img src="./Pictures/Charity-Profile-Top-518elevated.png" alt="ElevatED Logo" class="image_on_top"
+                width="100%" height="400px">
+            <h1>518 ElevatED</h1>
+            <ul class="charity_profile_list">
+                <li>Founded: 1997</li>
+                <li>Location: Albany, NY</li>
+                <li>Category: Education</li>
+                <li>Website-Link: <a href="https://www.518elevated.org" target="_blank">518 ElevatED</a></li>
+            </ul>
+            <ul>Description:</ul>
+            <p class="charity_profile_description">
+                In 1997 the organization was founded as Capital Region Sponsor-A-Scholar by Charles Buchanan and William
+                Barnet
+                as a
+                response to concerns about opportunities for local young people to develop the skills and experience to
+                meet the
+                growing need for an educated workforce in the region. Initially modeled after a successful program in
+                Philadelphia,
+                518 ElevatED developed a one-to-one student support program that identified promising, underserved young
+                people
+                with
+                ambitions to succeed in high school and college. After a feasibility study, the program was launched in
+                both
+                Albany
+                and Troy.
+            </p>
+            <button type="button" class="charity_profile_button">Volunteer Now</button>
+        </article>
+    </main>
+    <section>
+        <h3 class="charity_profile_h3">Location and Events</h3>
+        <p>To see the location of the Headquarters and Event options (if available), check out the map below!</p>
+        <div class="charity_profile_map" id="map_518elevated"></div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Jannik Hofmann. All rights reserved.</p>
+    </footer>
+    <script src="charity_profile.js"></script>
+    <script>
+        function initMap_518elevated() {
+
+            // setting coordinates for headquarter and events
+            var headquarters = { lat: 42.69527179353503, lng: -73.80797327459797 };
+            var eventLocation1 = { lat: 42.70653229465681, lng: -73.8590949034332 };
+
+            // setting map options
+            var mapOptions = {
+                center: headquarters,
+                zoom: 10
+            };
+
+            // creating map
+            var map = new google.maps.Map(document.getElementById('map_518elevated'), mapOptions);
+
+            // create marker for headquarters
+            var markerHQ = new google.maps.Marker({
+                position: headquarters,
+                map: map,
+                title: 'Headquarters'
+            });
+
+            // add info window to headquarter marker
+            var infoWindowHQ = new google.maps.InfoWindow({
+                content: '<h3>Headquarters</h3>'
+            });
+
+            // open info window on marker click
+            markerHQ.addListener('click', function () {
+                infoWindowHQ.open(map, markerHQ);
+            });
+
+            // create marker for event 1
+            var markerEvent1 = new google.maps.Marker({
+                position: eventLocation1,
+                map: map,
+                title: 'Event Location',
+                icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+            });
+
+            // add info window to event 1 marker
+            var infoWindowEvent1 = new google.maps.InfoWindow({
+                content: '<h3>2024 518 ElevatED Scholar Celebration</h3><p>06/05/2024 <br> 6:30 pm - 8:30 pm <br> <a href="https://www.518elevated.org/event/2024-518-elevated-scholar-celebration/" target="_blank">More Information</a></p>'
+            });
+
+            // open info window on marker click
+            markerEvent1.addListener('click', function () {
+                infoWindowEvent1.open(map, markerEvent1);
+            });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2uBf8nHUqSbudz6w2dBVzNbbq5BD1c78&callback=initMap_518elevated">
+        </script>
+</body>
+
+</html>

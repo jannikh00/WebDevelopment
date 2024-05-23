@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charities - MAP International</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+
+<body>
+    <header>
+        <nav class="header_left">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="charities.html">Charities</a></li>
+            </ul>
+        </nav>
+        <div class="header_right">
+            <a href="volunteer_now.html" class="volunteer_button">Volunteer Now</a>
+        </div>
+    </header>
+    <main>
+        <article>
+            <img src="./Pictures/Charity-Profile-Top-mapinternational.png" alt="MAP International Logo"
+                class="image_on_top" width="100%" height="200px">
+            <h1>MAP International</h1>
+            <ul class="charity_profile_list">
+                <li>Founded: 1954</li>
+                <li>Location: Brunswick, GA</li>
+                <li>Category: Health</li>
+                <li>Website-Link: <a href="https://www.map.org" target="_blank">MAP International</a></li>
+            </ul>
+            <ul>Description:</ul>
+            <p class="charity_profile_description">
+                MAP International, a renowned Christian nonprofit organization, endeavors to distribute vital medicine
+                and
+                health supplies
+                to underserved communities globally. With a mission rooted in the compassionate teachings of Jesus, as
+                reflected
+                in Matthew
+                25:36, MAP serves individuals regardless of religious affiliation, gender, race, nationality, or
+                ethnicity. Its
+                aim is to
+                foster healthier and more fulfilling lives for all.
+                <br><br>
+                Your support is instrumental in advancing MAP International's noble
+                cause. Whether through financial contributions or volunteerism, each gesture of generosity holds the
+                power to
+                effect
+                positive change. Together, let us join hands in advocating for life-saving interventions and uplifting
+                communities worldwide.
+            </p>
+            <button type="button" class="charity_profile_button">Volunteer Now</button>
+        </article>
+    </main>
+    <section>
+        <h3 class="charity_profile_h3">Location and Events</h3>
+        <p>To see the location of the Headquarters and Event options (if available), check out the map below!</p>
+        <div class="charity_profile_map" id="map_mapinternational"></div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Jannik Hofmann. All rights reserved.</p>
+    </footer>
+    <script src="charity_profile.js"></script>
+    <script>
+        function initMap_mapinternational() {
+
+            // setting coordinates for headquarter and events
+            var headquarters = { lat: 31.25638326535061, lng: -81.44682531786847 };
+            // var eventLocation1 = { lat: , lng:  };
+
+            // setting map options
+            var mapOptions = {
+                center: headquarters,
+                zoom: 10
+            };
+
+            // creating map
+            var map = new google.maps.Map(document.getElementById('map_mapinternational'), mapOptions);
+
+            // create marker for headquarters
+            var markerHQ = new google.maps.Marker({
+                position: headquarters,
+                map: map,
+                title: 'Headquarters'
+            });
+
+            // add info window to headquarter marker
+            var infoWindowHQ = new google.maps.InfoWindow({
+                content: '<h3>Headquarters</h3>'
+            });
+
+            // open info window on marker click
+            markerHQ.addListener('click', function () {
+                infoWindowHQ.open(map, markerHQ);
+            });
+
+            // // create marker for event 1
+            // var markerEvent1 = new google.maps.Marker({
+            //     position: eventLocation1,
+            //     map: map,
+            //     title: 'Event Location',
+            //     icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+            // });
+
+            // // add info window to event 1 marker
+            // var infoWindowEvent1 = new google.maps.InfoWindow({
+            //     content: '<h3></h3><p> <br>  <br> <a href="" target="_blank">More Information</a></p>'
+            // });
+
+            // // open info window on marker click
+            // markerEvent1.addListener('click', function () {
+            //     infoWindowEvent1.open(map, markerEvent1);
+            // });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2uBf8nHUqSbudz6w2dBVzNbbq5BD1c78&callback=initMap_mapinternational">
+        </script>
+</body>
+
+</html>
